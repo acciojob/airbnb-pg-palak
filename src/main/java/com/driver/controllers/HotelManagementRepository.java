@@ -89,18 +89,18 @@ public class HotelManagementRepository {
         return amountPaid;
     }
 
-    public int getBookings(Integer aadharCard) {
-        int ans = 0;
-        for(String bookingId : bookingDb.keySet()){
-            Booking booking = bookingDb.get(bookingId);
-            if(booking.getBookingAadharCard() == aadharCard){
-                ans++;
-            }
-        }
-        return ans;
-
-//        return countOfBookings.get(aadharCard);
-    }
+//    public int getBookings(Integer aadharCard) {
+//        int ans = 0;
+//        for(String bookingId : bookingDb.keySet()){
+//            Booking booking = bookingDb.get(bookingId);
+//            if(booking.getBookingAadharCard() == aadharCard){
+//                ans++;
+//            }
+//        }
+//        return ans;
+//
+////        return countOfBookings.get(aadharCard);
+//    }
 
     public Hotel updateFacilities(List<Facility> newFacilities, String hotelName){
         //We are having a new facilites that a hotel is planning to bring.
